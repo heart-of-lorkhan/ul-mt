@@ -1,0 +1,39 @@
+$breadcrumb-color: $color-black;
+$breadcrumb-current-color: $color-black;
+$breadcrumb-gap: 8px;
+
+.breadcrumb {
+  color: $breadcrumb-color;
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  li {
+    display: flex;
+
+    &:not(:last-child) {
+      &:after {
+        content: "-";
+        margin-right: $breadcrumb-gap;
+        margin-left: $breadcrumb-gap;
+      }
+    }
+
+    &:last-child {
+      color: $breadcrumb-current-color;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

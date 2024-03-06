@@ -1,0 +1,65 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+$color-black: #000;
+$color-white: #fff;
+$color-text-teal: #235b7a;
+$color-text-blue: #1965a0;
+
+// PRIMARY - SECONDARY
+$color-primary: #daf0ff;
+$color-secondary: #143c60;
+
+// FORMS
+
+// FONTS
+// stylelint-disable-next-line
+$font-primary: "Roboto", tahoma, sans-serif !important;
+$font-secondary: "Ultima Pro", tahoma, sans-serif;
+$font-weight: 500;
+$line-height: 1.5;
+$font-size: 14px;
+$font-size-desktop: 16px;
+
+// EASING TRANSITIONS
+$transition-duration: 0.2s;
+
+// Settings
+$desktop: 1366;
+$laptop: 1025;
+$tablet: 768;
+
+// Bootstrap overrides
+// scss-docs-end grid-breakpoints
+$grid-gutter-width: 16px;
+
+// Global cosmetic styles
+$overlay: rgba(0, 0, 0, 0.2);
+
+// Sections
+$section-padding-vertical: 40px;
+$section-padding-vertical-desktop: 80px;
+
+// Bootstrap overrides
+
+// scss-docs-end grid-breakpoints
+$grid-gutter-width: 16px;
+
+$container-padding-x: 70px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px,
+) !default;
+
+$container-padding-x: 72px;
+
+$container-max-widths: (
+  sm: 768px,
+  md: 1024px,
+  lg: 1366px,
+  xl: 1800px,
+);

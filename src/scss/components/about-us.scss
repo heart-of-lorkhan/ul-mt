@@ -1,0 +1,189 @@
+.about-us__inner {
+  display: flex;
+  flex-direction: column;
+
+  @include laptop {
+    flex-direction: row;
+  }
+}
+
+.about-us__image h3 {
+  font-size: 36px;
+  background-color: $color-primary;
+  color: $color-secondary;
+  text-align: center;
+
+  @include laptop {
+    text-align: left;
+    padding: 0px 21px 5px 84px;
+  }
+}
+
+.about-us__image {
+  width: 100%;
+
+  @include laptop {
+    width: 32%;
+  }
+}
+
+.about-us__text {
+  width: 100%;
+  padding: 18px;
+  background-color: $color-primary;
+
+  @include laptop {
+    width: 68%;
+    padding: 35px 192px 0 113px;
+  }
+}
+
+.about-us__text p {
+  letter-spacing: 1.1px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @include laptop {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.about-us__text p:not(:last-child) {
+  margin-bottom: 15px;
+
+  @include laptop {
+    margin-bottom: 35px;
+  }
+}
+
+.about-us__image img {
+  width: 100%;
+}
+
+.about-us__gallery {
+  margin-bottom: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    4deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 44%,
+    rgba(218, 240, 255, 1) 48%,
+    rgba(218, 240, 255, 1) 100%
+  );
+  @include laptop {
+    justify-content: space-between;
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 42%,
+      rgba(218, 240, 255, 1) 48%,
+      rgba(218, 240, 255, 1) 100%
+    );
+  }
+}
+
+.about-us__gallery img {
+  width: auto;
+  transition-duration: $transition-duration;
+}
+
+.about-us__gallery li:not(:last-child) {
+  margin-bottom: 4px;
+
+  @include laptop {
+    margin-bottom: 0;
+    margin-right: 4px;
+  }
+}
+
+.modal-subtitle {
+  position: absolute;
+  bottom: 0;
+  color: $color-white;
+  padding: 10px;
+  text-shadow: 0 0 10px $color-black;
+
+  @include laptop {
+    font-size: 30px;
+    padding: 10px 40px;
+  }
+}
+
+.about-us__gallery .vbox-item-content {
+  position: relative;
+}
+
+.about-us-custom-modal .vbox-inline {
+  width: auto;
+  display: block;
+}
+
+.about-us-custom-modal img {
+  border: 1px solid $color-white;
+
+  @include desktop {
+    height: 754px;
+    width: auto;
+  }
+}
+
+.theatre-people h2 {
+  background-color: $color-primary;
+  padding: 5px 10px 10px 20px;
+  font-size: 36px;
+  color: $color-secondary;
+
+  @include laptop {
+    padding: 5px 10px 10px 82px;
+  }
+}
+
+.employees-modal .vbox-grab .vbox-child > img {
+  display: none;
+}
+
+.employees__item-content {
+  display: flex;
+  flex-direction: column;
+
+  @include laptop {
+    flex-direction: row;
+    max-height: 606px;
+  }
+}
+
+.employees-hover-text {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: $transition-duration;
+  text-align: center;
+  padding: 10px 4px;
+  font-weight: 300;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include laptop {
+    opacity: 0;
+    padding: 20px 4px;
+  }
+}
+
+.vbox-item-content img {
+  max-height: 315px;
+  object-fit: cover;
+}

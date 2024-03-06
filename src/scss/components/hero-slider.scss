@@ -1,0 +1,138 @@
+.hero-slider {
+  max-width: 100%;
+  height: 100%;
+
+  @include desktop {
+    max-width: 1575px;
+  }
+
+  .swiper-slide {
+    height: auto;
+
+    h2 {
+      padding: 10px 20px;
+
+      @include laptop {
+        font-size: 30px;
+        line-height: 1.2;
+        padding-bottom: 45px;
+      }
+
+      @media (min-width: 1920px) {
+        padding-bottom: 10px;
+      }
+
+      > span {
+        display: inline-block;
+        max-width: 570px;
+      }
+    }
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include desktop {
+      height: 866px;
+    }
+  }
+}
+
+.hero__nav {
+  @include tablet {
+    width: 25%;
+  }
+
+  @include desktop {
+    width: 20%;
+  }
+}
+
+.hero__slider {
+  width: 100%;
+
+  @include tablet {
+    width: 75%;
+  }
+
+  @include desktop {
+    width: 80%;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 6px;
+    display: none;
+
+    @include laptop {
+      bottom: 12px;
+      display: block;
+    }
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include desktop {
+    height: 866px;
+  }
+}
+
+.swiper-slide h2 {
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  width: 100%;
+  background-color: $color-white;
+  opacity: 0.5;
+  line-height: 2;
+  color: $color-secondary;
+  font-size: 12px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include laptop {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+  height: auto;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+  background-color: #677788;
+  opacity: 1;
+  height: 10px;
+  width: 10px;
+
+  @include laptop {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #13416e;
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  color: #f0f8ff;
+}

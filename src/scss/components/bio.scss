@@ -1,0 +1,112 @@
+.bio__columns {
+    display: flex;
+    flex-direction: column; 
+background-color: $color-primary;
+       
+}
+
+.bio-text-wrap {
+    background-color: $color-primary;
+    width: 100%;
+padding: 20px;
+
+@include tablet {
+    padding: 0 40px 40px 40px;
+}
+    @include laptop {
+        width: 70%;
+    }
+
+    @include desktop {
+        
+    padding: 0 184px 42px 153px;
+
+    }
+}
+
+.bio h2 {
+    background-color: $color-primary;
+color: $color-secondary;
+text-align: center;
+font-size: 24px;
+    @include laptop {
+        text-align: left;
+        font-size: 34px;
+        letter-spacing: 0.3px;
+       padding:  4px 5px 12px 50px;
+    }
+}
+
+.bio-column {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: $color-primary;
+    margin-bottom: 10px;
+    @include laptop {
+        flex-direction: row;
+    }
+}
+
+
+.bio-column img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: auto;
+    @include laptop {
+        width: 30%;
+        
+    }
+}
+
+.bio-text-wrap p{
+    letter-spacing: -0.5px;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-weight: 300;
+    @include laptop {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+}
+
+.bio__list {
+     font-size: 20px;
+     padding: 0 30px;
+font-weight: 300;
+     @include laptop {
+        font-size: 30px;
+     padding: 0 30px;
+     line-height: 36px;
+     }
+}
+
+.bio-title {
+font-size: 32px;
+letter-spacing: -1px;
+margin-bottom: 14px;
+font-weight: 300;
+@include laptop {
+    margin-bottom: 30px;
+   
+}
+}
+
+.bio__list li {
+    
+}
+
+.bio__image-column {
+
+   
+    @include laptop {
+        display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    
+}
+
+@include desktop {
+  
+}}

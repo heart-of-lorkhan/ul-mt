@@ -1,0 +1,39 @@
+mixin cardJob(data)
+  - var tag = (data.link ? 'a href="/jobs-selected.html"' : 'div')
+  .card-job
+    #{tag}.card-job__content
+      if !data.link
+        a(href="#").card-job__logo
+          img(src= data.src title="" alt="")
+      else
+        .card-job__logo
+          img(src= data.src title="" alt="")
+      h3.h3.text-secondary= data.title
+      ul.card-job__list
+        li.card-job__item
+          .card-job__icon
+            +svg('case')
+          .card-job__info
+            if !data.link
+              a(href="#")= data.luggage
+            else
+              span= data.luggage
+        li.card-job__item
+          .card-job__icon
+            +svg('pin')
+          .card-job__info= data.destination
+        li.card-job__item
+          .card-job__icon
+            +svg('time')
+          .card-job__info= data.time
+        li.card-job__item
+          .card-job__icon
+            +svg('money')
+          .card-job__info= data.money
+        li.card-job__item
+          .card-job__icon
+            +svg('people')
+          .card-job__info= data.people
+      p.card-job__text= data.text
+      if data.button && !data.link
+        a(href="#").button.button--primary= data.button

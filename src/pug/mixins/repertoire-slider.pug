@@ -1,0 +1,8 @@
+mixin repertoireSlider(images) 
+    .swiper.repertoire-slider
+        .swiper-wrapper
+            each img in images
+                .swiper-slide
+                    img(src=img.src alt=img.alt)
+        button.swiper-button-prev
+        button.swiper-button-next

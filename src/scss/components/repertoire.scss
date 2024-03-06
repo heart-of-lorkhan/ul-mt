@@ -1,0 +1,243 @@
+.repertoires {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+.repertoire {
+    display: flex;
+    flex-direction: column;
+    color: $color-black;
+    background-color: $color-primary;
+
+    @include tablet {
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    @include desktop {
+        gap: 50px;
+    }
+
+    h3 {
+        font-family: $font-secondary;
+        font-size: 32px;
+        color: #1965a0;
+
+        @include laptop {
+            font-size: 48px;
+        }
+    }
+
+    p {
+        font-size: 18px; 
+         line-height: 1.1;
+        @include laptop {
+            font-size: 30px;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 370px;
+        object-fit: contain;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include laptop {
+            max-width: 585px;
+        }
+    }
+}
+
+.repertoire__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 24px 0;
+    font-size: 22px;
+    font-weight: 300;
+    width: 100%;
+    padding: 20px;
+    
+    @include tablet {
+        padding-top: 30px;
+        padding: 24px 76px 24px 0;
+    }
+
+    @include laptop {
+        font-size: 28px;
+    }
+
+    footer {
+        display: flex;
+        gap: 20px;
+        margin-top: auto;
+        margin-left: auto;
+
+        b {
+            font-size: 30px;
+        }
+
+        a,
+        div {
+            font-size: 16px;
+            color: #1965a0;
+            
+            @include laptop {
+                font-size: 30px;
+               
+            }
+        }
+
+        a {
+
+            &:focus,
+            &:hover,
+            &:active {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.repertoire__text a {
+    color: $color-text-blue;
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 0.8;
+    @include laptop {
+        font-size: 36px;
+        margin-bottom: 26px;
+    }
+}
+
+
+ .repertoire__text .repertoire__name {
+    color: $color-text-blue;
+    font-size: 30px;
+margin-bottom: 10px;
+text-decoration: none;
+    @include laptop {
+        font-size: 58px;
+        margin-bottom: 26px; 
+    }
+}
+
+.repertoire__desc {
+    font-size: 22px;
+    @include laptop {
+        font-size: 26px;
+    }
+}
+
+.my-image-links {
+    text-decoration: none;
+}
+.repertoire__modal-autor  {
+    color: $color-secondary;
+    font-weight: 300;
+    font-size: 20px;
+    @include laptop {
+        font-weight: 300;
+        font-size: 26px;
+    }
+}
+
+.repertoire__modal-event {
+    color: $color-secondary;
+font-size: 30px;
+    @include laptop {
+        
+    font-size: 60px;
+    }
+}
+
+.repertoire__modal-subtitle {
+    color: $color-secondary;
+    font-size: 20px;
+font-weight: 300;
+    @include laptop {
+        font-size: 26px;
+    }
+}
+
+.repertoire__modal-text {
+    font-weight: 300;
+    font-size: 22px;
+    @include laptop {
+        font-size: 26px;
+    }
+    
+}
+
+.repertoire__modal-text p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    @include laptop{
+        font-size: 20px;
+    }
+}
+
+.repertoire__modal-premiere  {
+    color: $color-secondary;
+    font-weight: 300;
+    font-size: 18px;
+    @include laptop {
+        font-size: 26px;
+    }
+}
+
+.repertoire__modal-title-wrap {
+    display: flex;
+    flex-direction: column;
+    
+
+@include laptop {
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
+
+.repertoire__modal-wrap-text {
+padding: 20px;
+    @include desktop{
+        padding: 52px 133px 52px 156px;
+    }
+    
+}
+
+.repertoire__modal-title-inner {
+    margin-bottom: 8px;
+
+    @include laptop {
+        margin-bottom: 14px;
+    }
+}
+
+.repertoire__modal-subtitle {
+    margin-bottom: 8px;
+
+}
+
+.repertoire-slider .swiper-wrapper {
+    max-height: 280px;
+
+}
+.repertoire-slider .swiper-slide img {
+    max-height: 270px;
+    object-fit: cover;
+}
+
+.repertoire__genre {
+    font-size: 20px;
+    color: $color-text-blue;
+    @include laptop {
+        font-size: 30px;
+    }
+}

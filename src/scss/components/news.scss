@@ -1,0 +1,84 @@
+.social__text p {
+  letter-spacing: 1.1px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  @include tablet {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  @include laptop {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.social__text p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.social__text {
+  width: 100%;
+  padding: 18px;
+  background-color: $color-primary;
+  overflow: visible;
+  max-height: 500px;
+  overflow-y: auto;
+  @include laptop {
+    width: 68%;
+    padding: 35px 192px 0 113px;
+    max-height: 1045px;
+  }
+}
+
+.social__image {
+  width: 100%;
+
+  @include laptop {
+    width: 32%;
+    background-color: $color-primary;
+  }
+}
+
+.social__image img {
+  width: 100%;
+}
+
+.social__image h3 {
+  font-size: 20px;
+  background-color: $color-primary;
+  color: $color-secondary;
+  text-align: center;
+  padding: 10px;
+  @include laptop {
+    font-size: 36px;
+    text-align: left;
+    padding: 0px 21px 5px 84px;
+  }
+}
+
+.social__inner {
+  display: flex;
+  flex-direction: column;
+
+  @include laptop {
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+}
+
+.news .about-us__inner,
+.news .about-us__gallery {
+  padding-bottom: 10px;
+}
+
+.news {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    4deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 44%,
+    rgba(218, 240, 255, 1) 48%,
+    rgba(218, 240, 255, 1) 100%
+  );
+}

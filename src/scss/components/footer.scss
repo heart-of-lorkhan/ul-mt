@@ -1,0 +1,60 @@
+.footer {
+    height: auto;
+    background-color: $color-primary;
+    
+}
+
+.footer-logo-small  img {
+    width: auto;
+    height: 50px;
+    margin-bottom: 30px;
+@include laptop {
+    height: 70px;
+}
+
+    @include desktop {
+        height: 100px;
+    }
+}
+
+.footer-logo-small:not(:last-child) {
+    margin-right: 30px;
+}
+
+.footer__inner-logos {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    @include laptop {
+        padding: 50px 0;
+    }
+}
+
+.footer__inner-logos-small {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-logo-large img {
+    width: 50%;
+    @include laptop {
+        width: 25%;
+        height: auto;
+    }
+  
+}
+
+.footer-logo-large {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    @include laptop {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+

@@ -1,0 +1,13 @@
+extends pug/base
+
+prepend vars
+  - title = 'Ульяновский молодежный театр им. Б. В. Александрова'
+
+append vars
+  //-
+
+block content
+  include pug/components/hero
+  include pug/components/about-us
+
+  

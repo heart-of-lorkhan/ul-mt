@@ -1,0 +1,53 @@
+extends pug/base
+
+prepend vars
+  - title = 'Ульяновский молодежный театр им. Б. В. Александрова'
+
+append vars
+  //-
+
+block content
+  section.section-tickets.repertoire
+    .section-header 
+      h2 Репертуар
+    ul.tickets
+  section.section-tickets#afisha
+    ul.repertoires
+      li.repertoire
+        img(src='https://store.rambler.ru/tickets/images/shows/2023/YA7ghsglVIekxQEoLszWcOru9wKhcpook1o3NPG4.jpg')
+        .repertoire__text
+          a(href=".repertoire0" data-vbtype="inline"  data-gall="repertoire" data-customclass="repertoire-modal").my-image-links Автор
+          .repertoire__name название
+            .vbox-item-content.repertoire0
+              .repertoire__modal-wrap-text
+                .repertoire__modal-title-wrap
+                  .repertoire__modal-title-inner
+                    .repertoire__modal-autor Cергей
+                    .repertoire__modal-event спектакль
+                  .repertoire__modal-premiere премьера состоялась
+                .repertoire__modal-subtitle режиссер
+                .repertoire__modal-subtitle художник
+                .repertoire__modal-text текст
+              +repertoireSlider(
+                [
+                  {
+                    src:"images/zbv.jpg",
+                    alt:"Сцена из спектакля 'Завтра была война', Алексей Храбсков в роли следователя серьёзно разговаривает с ученицей."
+                  },
+                  {
+                    src:"images/little-man.jpg",
+                    alt:"Герой спектакля в легкой пижаме смущенно смотрит в сторону, окутанный чужим красным боа."
+                  },
+                  {
+                    src:"images/older-son.jpg",
+                    alt:"Пожилой герой рассматривает чью-то фотографию в рамке, держа её в руках, на стене рядом висит календарью"
+                  },
+                  {
+                    src:"images/Shipuchin.jpg",
+                    alt:"Герой в ослепительном фраке, что-то говорит, глядя на альбом, украшенный праздничной лентой."
+                  }
+                ]
+              )
+          p.repertoire__desc текст
+          footer
+            div продолжительность

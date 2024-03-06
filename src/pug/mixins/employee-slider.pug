@@ -1,0 +1,18 @@
+mixin employeeSlider(images) 
+    .swiper.employee-slider
+        .swiper-wrapper
+            each img in images
+                .swiper-slide
+                    img(src=img.src alt=img.alt)
+                //- .swiper-slide
+                //-     img(src="images/hero-slider-00.jpg" alt="Сцена из спектакля 'Хозяйка гостиницы', по лицам персонажей видно, что они испытывают сложные эмоции в этот момент")
+                //- .swiper-slide
+                //-     img(src="images/hero-slider-01.jpg" alt="Сцена из спектакля, оживленная беседа парня и девушки, они улыбаются")
+                //- .swiper-slide
+                //-     img(src="images/hero-slider-02.jpg" alt="Сцена из спектакля")
+                //- .swiper-slide
+                //-     img(src="images/hero-slider-03.jpg" alt="Сцена из спектакля 'Завтра была война', ученики школы весело разговаривают перед началом урока в классе")
+                //- .swiper-slide
+                //-     img(src="images/hero-slider-00.jpg" alt="Сцена из спектакля")
+        button.swiper-button-prev
+        button.swiper-button-next

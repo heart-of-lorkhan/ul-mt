@@ -1,0 +1,120 @@
+// Backgrounds
+.background-default {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.background-primary {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.background-secondary {
+  background-color: $color-secondary;
+  color: $color-white;
+}
+
+.list-green > li {
+  background-color: #a3d945;
+}
+
+.list-orange > li {
+  background-color: #fab81b;
+}
+
+.list-blue > li {
+  background-color: #78d0fe;
+}
+
+// Text colors
+.text-default {
+  color: $color-white;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+// Text alignment
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.mt-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.clearfix {
+  overflow: auto;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.hidden-mobile {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.visible-mobile {
+  display: block;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.list-none {
+  list-style-type: none;
+}

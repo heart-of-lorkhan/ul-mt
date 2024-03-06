@@ -1,0 +1,23 @@
+.menu-toggle-close {
+  display: none;
+  padding: 0;
+  background: none;
+  border: 0;
+
+  .mobile-menu-active & {
+    z-index: 10;
+    position: relative;
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.menu-toggle-open {
+  padding: 0;
+  background: none;
+  border: 0;
+
+  .mobile-menu-active & {
+    display: none;
+  }
+}

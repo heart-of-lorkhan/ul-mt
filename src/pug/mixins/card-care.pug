@@ -1,0 +1,11 @@
+mixin cardCare(data)
+  .card-care
+    .card-care__image 
+      img.card-care__background(src=data.image alt="")
+      img.card-care__logo(src=data.logo alt="")
+    .card-care__text 
+      h3= data.title
+      p= data.text
+      .card-care__button-wrap
+        a(href="").button.card-care__button About us
+        a(href="").button.card-care__button View jobs

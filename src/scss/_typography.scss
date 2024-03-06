@@ -1,0 +1,100 @@
+$h1-font-size: 65px;
+$h2-font-size: 30px;
+$h3-font-size: 20px;
+$h4-font-size: 14px;
+$h5-font-size: 10px;
+$h6-font-size: 8px;
+$h1-font-size-desktop: 120px;
+$h2-font-size-desktop: 40px;
+$h3-font-size-desktop: 30px;
+$h4-font-size-desktop: 16px;
+$h5-font-size-desktop: 12px;
+$h6-font-size-desktop: 10px;
+
+.h1 {
+  font-family: $font-primary;
+  font-size: $h1-font-size;
+  line-height: $h1-font-size;
+
+  @include laptop {
+    font-size: $h1-font-size-desktop;
+    line-height: $h1-font-size-desktop;
+  }
+}
+
+.h2 {
+  font-family: $font-primary;
+  font-size: $h2-font-size;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  color: $color-primary;
+  margin-bottom: 20px;
+
+  &.text-white {
+    color: $color-white;
+  }
+
+  &.text-secondary {
+    color: $color-secondary;
+  }
+
+  @include laptop {
+    font-size: $h2-font-size-desktop;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-bottom: 32px;
+  }
+}
+
+.h3 {
+  font-family: $font-primary;
+  font-size: $h3-font-size;
+  line-height: 28px;
+
+  @include laptop {
+    font-size: $h3-font-size-desktop;
+    line-height: 44px;
+  }
+}
+
+.h4 {
+  font-size: $h4-font-size;
+  line-height: 22px;
+
+  @include laptop {
+    font-size: $h4-font-size-desktop;
+    line-height: 24px;
+  }
+}
+
+.h5 {
+  font-size: $h5-font-size;
+
+  @include laptop {
+    font-size: $h5-font-size-desktop;
+  }
+}
+
+.h6 {
+  font-size: $h6-font-size;
+
+  @include laptop {
+    font-size: $h6-font-size-desktop;
+  }
+}
+
+li {
+  list-style-position: outside;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+
+  @include laptop {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}

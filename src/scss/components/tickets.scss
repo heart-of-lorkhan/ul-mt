@@ -1,0 +1,337 @@
+.section-tickets__blue-background {
+  background-color: $color-primary;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    width: 75%;
+  }
+
+  @include laptop {
+    align-items: center;
+    padding: 10px 48px;
+    flex-direction: row;
+  }
+}
+
+.section-tickets__white-background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    width: 25%;
+
+    @include laptop {
+      align-items: center;
+    }
+  }
+}
+
+.section-tickets__poster {
+  display: flex;
+  width: 100%;
+  border-bottom: $color-text-blue 4px solid;
+  flex-direction: column;
+  height: auto;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+  }
+}
+
+.section-tickets__title {
+  background-color: $color-white;
+  color: $color-secondary;
+  font-size: 32px;
+  padding: 8px 0 8px 34px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 60%;
+
+  @include tablet {
+    padding: 16px 0 16px 34px;
+    width: 25%;
+    letter-spacing: 0px;
+    line-height: 1;
+  }
+
+  @include desktop {
+    padding: 16px 0 16px 76px;
+    letter-spacing: 5px;
+    font-size: 50px;
+  }
+}
+
+.section-tickets__poster-dates {
+  width: 100%;
+}
+
+.section-tickets-title-wrap {
+  background-color: $color-primary;
+  border-bottom: $color-text-blue 4px solid;
+}
+
+.section-tickets__white-container {
+  display: flex;
+  padding: 20px 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include laptop {
+    padding: 10px 10px 10px 25px;
+    flex-direction: row;
+
+    @include desktop {
+      padding: 10px 10px 10px 50px;
+    }
+  }
+}
+
+.section-tickets__date {
+  color: $color-secondary;
+  font-size: 40px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  font-weight: 900;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include laptop {
+    font-size: 26px;
+  }
+
+  @include desktop {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.section-tickets__day {
+  color: $color-secondary;
+  margin-bottom: 5px;
+
+  @include tablet {
+    font-weight: 300;
+    font-size: 28px;
+  }
+
+  @include laptop {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+  }
+}
+
+.section-tickets__date-wrap {
+  text-align: center;
+}
+
+.section-tickets__author {
+  @include tablet {
+    padding: 14px 0px 14px 14px;
+  }
+
+  @include desktop {
+    padding: 7px 0 7px 92px;
+  }
+}
+
+.section-tickets__author {
+  font-size: 30px;
+  color: $color-secondary;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include laptop {
+    font-size: 32px;
+  }
+}
+
+.section-tickets__show div:first-child {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: $color-secondary;
+  line-height: 1.4;
+  text-align: center;
+
+  @include laptop {
+    text-align: left;
+    line-height: 1;
+    max-width: 265px;
+    min-width: 265px;
+    font-size: 18px;
+  }
+
+  @include desktop {
+    letter-spacing: 0px;
+    min-width: 436px;
+    max-width: 436px;
+    font-size: 30px;
+  }
+}
+
+.section-tickets__show {
+  margin-bottom: 10px;
+
+  @include laptop {
+    text-align: left;
+    line-height: 1;
+    max-width: 265px;
+    min-width: 265px;
+    font-size: 18px;
+
+    @include desktop {
+      letter-spacing: 0px;
+      min-width: 436px;
+      max-width: 436px;
+      font-size: 30px;
+    }
+  }
+}
+
+.section-tickets-genre {
+  font-size: 18px;
+  font-weight: 300;
+  color: $color-text-blue;
+  margin-bottom: 0;
+  line-height: 1.5;
+
+  @include desktop {
+    margin-right: 26px;
+    margin-left: auto;
+    font-size: 24px;
+  }
+}
+
+.section-tickets-genre {
+  margin-right: 0;
+  margin-left: auto;
+
+  @include desktop {
+    max-width: 344px;
+  }
+}
+
+.section-tickets__age-limit {
+  margin-bottom: 0;
+  font-size: 50px;
+  color: $color-text-blue;
+  text-align: end;
+  margin-top: 6px;
+
+  @include laptop {
+    font-size: 22px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+    font-weight: 300;
+    min-width: 72px;
+  }
+}
+
+.section-tickets__pushkin-card {
+  width: 100px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+
+  @include laptop {
+    width: 56px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 100px;
+  }
+}
+
+.section-tickets__buy {
+  border: 1px solid;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 10px 30px;
+  width: 164px;
+  margin-bottom: 18px;
+
+  span {
+    z-index: 20;
+  }
+
+  @include laptop {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(0deg);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
+  }
+
+  &:visited {
+    color: $color-secondary;
+  }
+}
+
+.section-tickets__buy:hover {
+  background-color: $color-secondary;
+  color: #fff;
+
+  &:after {
+    left: 120%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.section-tickets__show-info {
+  font-weight: 300;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.section-tickets__image {
+  width: auto;
+  height: 140px;
+  object-fit: cover;
+}
+
+.section-tickets__show-more {
+  text-decoration: none;
+  font-size: 20px;
+  color: $color-secondary;
+
+  &:focus,
+  &:hover,
+  &:visited {
+    color: $color-secondary;
+  }
+}
+
+.section-tickets__time {
+  color: $color-secondary;
+  font-size: 20px;
+}
